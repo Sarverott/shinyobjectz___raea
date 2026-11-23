@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security reporting instructions
+    url: https://github.com/shinyobjectz/raea/blob/main/SECURITY.md
+    about: Report vulnerabilities privately; do not include exploit details or secrets in an issue.
+  - name: raea documentation
+    url: https://github.com/shinyobjectz/raea/blob/main/docs/manual/index.md
+    about: Read the CLI, SDK and workflow references before filing a report or proposal.
