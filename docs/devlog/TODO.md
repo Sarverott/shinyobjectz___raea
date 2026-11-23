@@ -35,8 +35,8 @@ means completed work, not an upstream merge or policy approval.
 - [x] Step 4. Include a clearly optional, direct BOS reference for agents and maintainers
       to evaluate; do not imply BOS has already been adopted by upstream.
 - [x] Step 5. Add `CLAUDE.md` as a pointer to `AGENTS.md`, without duplicating guidance.
-- [ ] Step 6. Validate documentation, commit files separately and push the branch to `origin`.
-- [ ] Step 7. Open another upstream PR, linking it to the AppImage PR and carrying this board.
+- [x] Step 6. Validate documentation, commit files separately and push the branch to `origin`.
+- [x] Step 7. Open another upstream PR, linking it to the AppImage PR and carrying this board.
 
 ## Phase 4: Community and maintenance follow-ups
 
@@ -72,9 +72,12 @@ review; do not invent private reporting addresses or enforcement contacts.
 - AppImage PR: [shinyobjectz/raea#226](https://github.com/shinyobjectz/raea/pull/226),
   `Sarverott:development` → upstream `main`. Eight initial commits each changed
   one file; later helperboard-only commits record progress.
-- Project/agent guide PR: pending.
+- Project/agent guide PR: [shinyobjectz/raea#227](https://github.com/shinyobjectz/raea/pull/227),
+  `Sarverott:development-2` → upstream `main`, independently based on `a4898b76`.
 - Guide validation: all relative Markdown links resolve, `CLAUDE.md` contains
   only `@AGENTS.md`, whitespace and public-content checks pass. The guide is
   source-backed; no new engine/GPU tests were claimed or run for the docs.
 - Architecture discovery: GitNexus returned no indexed repositories; direct
   source and current manual inspection supplied the evidence instead.
+- Security route: GitHub's API reported upstream private vulnerability reporting
+  enabled on 2026-11-23. The setting is separate from `SECURITY.md` and can change.
