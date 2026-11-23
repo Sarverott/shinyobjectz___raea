@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible problem in the engine, SDK or app hosts.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For vulnerabilities, use the repository's Security tab instead of a public issue.
+        Read CONTRIBUTING.md, remove credentials and personal information, and share only assets you may publish.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Output of raea --version, or the source commit and build command.
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component
+      options:
+        - Engine CLI or rendering
+        - TypeScript or React SDK
+        - TSX app host (web/Blitz or native/Rune)
+        - Desktop editor or its integration
+        - Build, installation or release packaging
+        - Unsure or another component
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS/version and CPU architecture; for rendering problems, GPU, driver, and backend (including WGPU_BACKEND if set).
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Exact command and steps, smallest composition or app, and any asset requirements. Explain how to reproduce without private or large assets.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+      description: For visual or audio issues, identify the frame or timestamp and attach a reference when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized logs, traces or screenshots
+      description: Remove secrets, private paths and personal information before attaching evidence.
