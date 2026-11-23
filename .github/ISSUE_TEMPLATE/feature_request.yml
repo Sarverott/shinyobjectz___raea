@@ -1,0 +1,39 @@
+name: Feature proposal
+description: Discuss a focused capability or workflow improvement before implementation.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        CONTRIBUTING.md asks for discussion before implementation. Explain the work you want to accomplish; a proposal is not a release promise.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Task or problem
+      description: What are you trying to make, and who would benefit?
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current workflow and limitations
+      description: Include the relevant raea command, SDK feature or app workflow and any workaround you tried.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe a focused result and a concrete example of how it would be used.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and tradeoffs
+      description: Existing approaches, platform requirements, external tools, or compatibility constraints.
+  - type: textarea
+    id: verification
+    attributes:
+      label: How to verify it
+      description: A small example, expected output, or behavior that would show the feature works.
